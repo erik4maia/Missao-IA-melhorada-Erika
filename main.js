@@ -11,11 +11,16 @@ const perguntas = [
         alternativas: [
             {
                 texto: " Abertura Ruy Lopez (Espanhola)",
-                afirmacao: " Oferece um equilíbrio entre ataque e defesa, dando oportunidades para jogo posicional. ",
-            },
+                afirmacao: [
+                    "Oferece um equilíbrio entre ataque e defesa, dando oportunidades para jogo posicional. ",
+                    "É uma abertura clássica que permite à brancas controlar o centro e desenvolver suas peças de maneira sólida.",
+                    "Frequente em partidas de alto nível, pode levar a estruturas complexas e profundas que exigem muita preparação teórica.",
+                ]
             {
                 texto: " Abertura Siciliana ",
                 afirmacao: " Tem como objetivo desequilibrar o jogo, evitando as linhas simétricas e levando a um jogo assimétrico ",
+                "É uma das respostas mais agressivas para 1.e4, oferecendo várias opções de desenvolvimento para as pretas.",
+                "Embora complexa, a Siciliana oferece grande potencial de contra-ataque, especialmente nas variantes como a Najdorf ou a Dragon.",
             }
         ]
     },
@@ -77,9 +82,9 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = " ";
 
-function mostraPergunta(){
+function mostraPergunta() {
 
-    if (atual >= perguntas.length){
+    if (atual >= perguntas.length) {
         mostraResultado();
         return;
     }
@@ -90,8 +95,8 @@ function mostraPergunta(){
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for (const alternativa of perguntaAtual.alternativas){
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
@@ -99,14 +104,14 @@ function mostraAlternativas(){
     }
 }
 
-function respostaSelecionada(opcaoSelecionada){
+function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
 
-function mostraResultado(){
+function mostraResultado() {
     caixaPerguntas.textContent = "Após avaliar suas respostas, o seu perfil profissional é:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = " ";
