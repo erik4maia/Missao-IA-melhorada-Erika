@@ -16,16 +16,18 @@ const perguntas = [
                     "É uma abertura clássica que permite à brancas controlar o centro e desenvolver suas peças de maneira sólida.",
                     "Frequente em partidas de alto nível, pode levar a estruturas complexas e profundas que exigem muita preparação teórica.",
                 ]
+            }
             {
                 texto: " Abertura Siciliana ",
-                afirmacao: " Tem como objetivo desequilibrar o jogo, evitando as linhas simétricas e levando a um jogo assimétrico ",
+                afirmacao: [
+                    "Tem como objetivo desequilibrar o jogo, evitando as linhas simétricas e levando a um jogo assimétrico ",
                 "É uma das respostas mais agressivas para 1.e4, oferecendo várias opções de desenvolvimento para as pretas.",
                 "Embora complexa, a Siciliana oferece grande potencial de contra-ataque, especialmente nas variantes como a Najdorf ou a Dragon.",
-            }
-        ]
+            ]
+    }
     },
-    {
-        enunciado: " Qual a jogada que proporciona um mate mais rápido?",
+{
+    enunciado: " Qual a jogada que proporciona um mate mais rápido?",
         alternativas: [
             {
                 texto: " Mate do Louco (Fool’s Mate) ",
@@ -36,9 +38,9 @@ const perguntas = [
                 afirmacao: "  Ensina a importância de defender os pontos fracos e o valor do desenvolvimento rápido.",
             }
         ]
-    },
-    {
-        enunciado: "  Qual o maior torneio de xadrez atualmente?",
+},
+{
+    enunciado: "  Qual o maior torneio de xadrez atualmente?",
         alternativas: [
             {
                 texto: " Tata Steel Chess Tournament ",
@@ -49,9 +51,9 @@ const perguntas = [
                 afirmacao: " Reúne os melhores jogadores do mundo em partidas rápidas, clássicas e blitz. ",
             }
         ]
-    },
-    {
-        enunciado: " Qual a peça mais usadas durante as partidas?",
+},
+{
+    enunciado: " Qual a peça mais usadas durante as partidas?",
         alternativas: [
             {
                 texto: " Dama ",
@@ -62,9 +64,9 @@ const perguntas = [
                 afirmacao: " Essencial para controlar o centro do tabuleiro, abrir caminhos para outras peças e criar estruturas estratégicas.",
             }
         ]
-    },
-    {
-        enunciado: " No xadrez, controlar o centro do tabuleiro (as casas d4, d5, e4 e e5) é tão importante para uma boa estratégia?",
+},
+{
+    enunciado: " No xadrez, controlar o centro do tabuleiro (as casas d4, d5, e4 e e5) é tão importante para uma boa estratégia?",
         alternativas: [
             {
                 texto: " Sim.",
@@ -75,7 +77,7 @@ const perguntas = [
                 afirmacao: " Controlar o centro no xadrez não é importante, já que você pode atacar diretamente pelas bordas do tabuleiro e criar uma estratégia com peças mais distantes. ",
             }
         ]
-    },
+},
 ];
 
 let atual = 0;
