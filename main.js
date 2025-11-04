@@ -14,7 +14,6 @@ const perguntas = [
                 afirmacao: [
                     "Oferece um equilíbrio entre ataque e defesa, dando oportunidades para jogo posicional. ",
                     "É uma abertura clássica que permite à brancas controlar o centro e desenvolver suas peças de maneira sólida.",
-                    "Frequente em partidas de alto nível, pode levar a estruturas complexas e profundas que exigem muita preparação teórica.",
                 ]
             }
             {
@@ -22,9 +21,10 @@ const perguntas = [
                 afirmacao: [
                     "Tem como objetivo desequilibrar o jogo, evitando as linhas simétricas e levando a um jogo assimétrico ",
                     "É uma das respostas mais agressivas para 1.e4, oferecendo várias opções de desenvolvimento para as pretas.",
-                    "Embora complexa, a Siciliana oferece grande potencial de contra-ataque, especialmente nas variantes como a Najdorf ou a Dragon.",
                 ]
+
             }
+        ]
     },
     {
         enunciado: " Qual a jogada que proporciona um mate mais rápido?",
@@ -34,16 +34,15 @@ const perguntas = [
                 afirmacao: [
                     "Serve para mostrar a importância de proteger o rei e não abrir as diagonais perigosamente. ",
                     "É o mate mais rápido do xadrez, acontecendo após apenas dois lances das brancas, alertando sobre o risco de movimentos imprudentes.",
-                    "Embora raro em jogos de nível mais alto, o Mate do Louco é uma lição clara sobre a importância de não expor a posição do rei logo no início.",
                 ]
             },
-            },
+        ]
+    },
     {
         texto: " Mate do Pastor (Scholar’s Mate) ",
         afirmacao: [
-            "  Ensina a importância de defender os pontos fracos e o valor do desenvolvimento rápido.",
+            "Ensina a importância de defender os pontos fracos e o valor do desenvolvimento rápido.",
             "É um exemplo clássico de como um erro no desenvolvimento das peças pode levar a um rápido xeque-mate, especialmente se o rei não for adequadamente protegido.",
-            "Embora seja uma técnica simples, o Mate do Pastor é uma boa lição para iniciantes sobre como não descuidar da defesa e do controle do centro do tabuleiro.",
         ]
     }
 ]
